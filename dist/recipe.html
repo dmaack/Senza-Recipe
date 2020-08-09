@@ -43,16 +43,24 @@
         }
 
         ul {
-            list-style: none;
+            /* list-style: none; */
+            list-style-position: outside;
         }
 
         ul > li::before {
-            content: "•"; 
-            color: #75CA92;
+            /* content: "•";  */
+            /* color: #75CA92;
             display: inline-block; 
             width: 20px;
-            /* margin-left: -1em; */
-            font-weight: bold;
+            font-weight: bold; */
+        }
+
+        ul > li {
+            color: #75CA92;
+        }
+
+        span {
+            color: black;
         }
 
         .ingredients {
@@ -83,6 +91,10 @@
             padding-bottom: 20px;
         }
 
+        li > div {
+            display: inline;
+        }
+
         ol > li::before {
             content: counter(li) '.';
             color: #75CA92;
@@ -94,6 +106,7 @@
 
         span {
             line-height: 15px;
+            
         }
 
         .plating > p {
@@ -138,11 +151,11 @@
         <div class='ingredients'>
             <h2>Ingredients</h2>
             <ul>
-                <li><strong>3</strong> large avocados, this is more text to watch for styling</li>
-                <li><strong>1</strong> tsp. Cholula Sauce</li>
-                <li><strong>1</strong> lime</li>
-                <li><strong>2</strong> oz. Grape Tomatoes, quartered</li>
-                <li>Salt and Pepper, to taste</li>
+                <li><span><strong>3</strong> large avocados, this is more text to watch for styling</span></li>
+                <li><span><strong>1</strong> tsp. Cholula Sauce</span></li>
+                <li><span><strong>1</strong> lime</span></li>
+                <li><span><strong>2</strong> oz. Grape Tomatoes, quartered</span></li>
+                <li><span>Salt and Pepper, to taste</span></li>
             </ul>
         </div>
         
