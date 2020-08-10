@@ -31,11 +31,6 @@
         .serving-and-time {
             display: flex;
             justify-content: space-evenly;
-            /* background-color: #75CA92;
-            width: 100%;
-            align-items: center; */
-
-
             box-shadow: -2px 6px 15px rgba(0,0,0,0.25);
             color: #75CA92;
             align-items: center;
@@ -43,16 +38,7 @@
         }
 
         ul {
-            /* list-style: none; */
             list-style-position: outside;
-        }
-
-        ul > li::before {
-            /* content: "•";  */
-            /* color: #75CA92;
-            display: inline-block; 
-            width: 20px;
-            font-weight: bold; */
         }
 
         ul > li {
@@ -61,14 +47,13 @@
 
         span {
             color: black;
-            line-height: 15px;
+            font-weight: normal;
         }
 
         .ingredients {
             line-height: 30px;
             background: #F5F6F8;
-            /* margin-top: 50px; */
-           margin-top: 20px;
+            margin-top: 20px;
             
         }
 
@@ -77,15 +62,16 @@
         }
 
         .ingredients, .directions {
-            /* margin-left: 50px; */
-            /* margin: 30px 10px 0 10px; */
             padding: 15px;
         }
 
         ol {
             padding-left: 20px;
-            list-style: none;
+            list-style-position: outside;
             counter-reset: li;
+            color: #75CA92;
+            font-weight: bold;
+            margin-left: 18px;
         }
 
         ol > li {
@@ -96,13 +82,13 @@
             display: inline;
         }
 
-        ol > li::before {
-            content: counter(li) '.';
-            color: #75CA92;
-            display: inline-block;
-            width: 20px;
-            counter-increment: li;
-            font-weight: bold;
+        span {
+            line-height: 15px;
+            
+        }
+
+        .plating {
+            padding-left: 15px;
         }
 
         .plating > p {
@@ -112,35 +98,24 @@
         }
 
         .reminder {
-            background: #242425;
+            background: #1f1f24;
             color: #fff;
             padding: 10px;
             margin-top: 30px;
+            margin-bottom: 50px;
             display: flex;
             justify-content: space-between;
-            /* align-items: center; */
+            align-items: center;
         }
 
         .reminder > p {
-            width: 85%;
+            width: 75%;
             /* text-align: center; */
         }
 
-        i {
-            color: #75CA92;
-            font-size: 25px;
-            margin-top: 16px;
-            margin-left: 20px;
-        }
-
-        .logo {
-            margin: 30px auto 100px auto;
-        }
-
-        .logo > img {
-            width: 30%;
-            display: block;
-            margin: 0 auto;         
+        .reminder > img {
+            width: 65px;
+            height: 65px;
         }
 
     </style>
@@ -170,7 +145,7 @@
         <div class='directions'>
             <h2>Directions</h2>
             <ol>
-                <li><div> Halve avocados and remove pits, setting them aside. Cut avocaods into cubes with a pairing knife, then scoop into a bowl.</div></li>
+                <li><span> Halve avocados and remove pits, setting them aside. Cut avocaods into cubes with a pairing knife, then scoop into a bowl.</span></li>
                 <li><span> Halve avocados and remove pits, setting them aside. Cut avocaods into cubes with a pairing knife, then scoop into a bowl.</span></li>
                 <li><span> Halve avocados and remove pits, setting them aside. Cut avocaods into cubes with a pairing knife, then scoop into a bowl.</span></li>
                 <li><span> Halve avocados and remove pits, setting them aside. Cut avocaods into cubes with a pairing knife, then scoop into a bowl.</span></li>
@@ -185,13 +160,13 @@
         </div>
 
         <div class='reminder'>
-            <i class="far fa-lightbulb"></i>
+            <img src="http://static.senza.us/senza_icon_square.png" alt="Senza Logo">
             <p>“Remember to log optional ingredients separately in your journal.”</p>
         </div>
 
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="http://static.senza.us/senza_logo_vertical_positive.png" alt="Senza Logo">
-        </div>
+        </div> -->
          
     </section>
 </body>
