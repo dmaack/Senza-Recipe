@@ -1,0 +1,114 @@
+// Senza Hero
+#shopify-section-1597867646182 {
+  background: #242425;
+  
+  .my-custom-header {
+  	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    
+    
+    img:last-child {
+    	width: 50%;
+      	
+      @include media-query($small) {
+      	width: 100%;
+      }
+    }
+    
+    .custom-button-section {
+    	display: flex;
+     	align-items: center;
+      
+      .apple-btn {
+      	width: 145px;
+        height: 45px;
+        border-radius: 8px;
+        object-fit: fill;
+        
+        @include media-query($small) {
+        	width: 130px;
+        	height: 50px;
+        }
+      }
+      
+      .google-btn {
+      	width: 175px;
+        height: 75px;
+        
+        @include media-query($small) {
+        	width: 150px;
+        	height: 75px;
+        }
+      }
+    }
+    
+    // media query for mobile .my-custom-header
+    @include media-query($small) {
+      
+      flex-direction: column;
+/*       text-align: center;
+      width: 100%;
+     	margin-left: 0; */
+      
+      .my-custom-left-content--desktop > img {
+      	display: none;
+        text-align: center;
+      	width: 100%;
+     	margin-left: 0;
+      }
+      
+       
+    }
+      .my-custom-left-content--mobile {
+       	flex-direction: column;
+        text-align: center;
+        
+        h1 {
+        	font-size: 1.5em;
+          	color: #fff;
+            letter-spacing: 4px;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+        
+        .my-custom-left-content > img {
+          	display: inherit;
+        	width: 200px;
+          	height: 150px;
+          	margin: 1.5em auto;
+        }
+      }
+      
+     
+    
+  
+  // Left Content For Desktop 
+  .my-custom-left-content--desktop {
+    width: 50%;
+    margin-left: 2em;
+  	
+    
+    h1 {
+  		font-size: 2em;
+      	color: #fff;
+        letter-spacing: 4px;
+        font-weight: lighter;
+    	margin-bottom: 0;
+  	}
+    
+    img {
+    	width: 350px;
+      	height: 125px;
+      	object-fit: contain;
+    }
+  }
+  
+	// Left Content For Mobile
+  .my-custom-left-content--mobile {
+  	display: none; 
+  }
+  }    
+} // closes senza hero
