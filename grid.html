@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(12, 5vw);
+        grid-gap: 30px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item-1 {
+        grid-column-start: 2;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 7; 
+    }
+    .item-2 {
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 4; 
+    }
+    .item-3 {
+        grid-column-start: 8;
+        grid-column-end: 11;
+        grid-row-start: 4;
+        grid-row-end: 7; 
+    }
+    .item-4 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 10; 
+    }
+    .item-5 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        grid-row-end: 13; 
+    }
+    .item-6 {
+        grid-column-start: 5;
+        grid-column-end: 11;
+        grid-row-start: 7;
+        grid-row-end: 13; 
+    }
+    .centered-text {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+</style>
+<body>
+    <div class="container">
+
+        <a href="/collections/keto-tast-tests" class='item-1'><img src="./dist/assets/tijana-drndarski-Us3QEwd9mBU-unsplash 2.jpg" alt="Taste test spoons"><div class='centered-text'>Taste Tests</div></a>
+        <a href="" class='item-2'><img src="./dist/assets/calum-lewis-rkT_TG5NKF8-unsplash 2.jpg" alt=""></a>
+        <a href="" class='item-3'><img src="./dist/assets/maddi-bazzocco-UhrHTmVBzzE-unsplash 2.jpg" alt=""></a>
+        <a href="" class='item-4'><img src="./dist/assets/nadia-pimenova-UgeZDqfofXU-unsplash 2.jpg" alt=""></a>
+        <a href="" class='item-5'><img src="./dist/assets/caroline-attwood-uaMwBQ_wjng-unsplash 2.jpg" alt=""></a>
+        <a href="" class='item-6'><img src="./dist/assets/nathan-dumlao-pnmRtTHWqDM-unsplash 2.jpg" alt=""></a>
+    </div>
+</body>
+</html>
